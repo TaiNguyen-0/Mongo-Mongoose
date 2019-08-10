@@ -120,5 +120,5 @@ app.post("/articles/:id", function(req, res) {
 
 // Start the server
 app.listen(PORT, function() {
-  console.log("App running on port " + PORT + "!");
+  console.log("App running on port " + "http://localhost:" + PORT);
 });
