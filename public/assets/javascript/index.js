@@ -85,9 +85,9 @@ $(document).ready(function() {
         return panel;
     }
 
-    function renderEmpty() {
+    // function renderEmpty() {
 
-    }
+    // }
 
     function handleArticleSave() {
         var articleToSave = $(this).parents(".panel").data();
