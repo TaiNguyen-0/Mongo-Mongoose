@@ -17,5 +17,24 @@ module.exports = {
                 cb(err, docs);
             })
         })
+    },
+    delete: function(query, cb) {
+        Headline.remove(query, cb);
+    },
+    // Filters all by new to old
+    get: function(query, cb) {
+        Headline.find(query)
+            .sort({
+                _id: -1
+            })
+            .exec(function(err, doc) {
+                cb(doc);
+            });
+    },
+    // Updates with id
+    update: function(query, cb) {
+        Headline.update({ _id: query._id }, {
+            $set: query
+        }, {}, cb);
     }
 }
