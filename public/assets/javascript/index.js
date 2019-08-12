@@ -42,7 +42,7 @@ $(document).ready(function() {
                 article.summary,
                 "</div></div>",
             ].join(""));
-        panel.data("_id", arrticle._id);
+        panel.data("_id", article._id);
         return panel;
     }
 
@@ -108,7 +108,7 @@ $(document).ready(function() {
         $.get("/api/fetch")
             .then(function(data) {
                 initPage();
-                bootbox.alert("<h3 class='text-center m-top-70'>" + data.message + "</h3>")
+                // bootbox.alert("<h3 class='text-center m-top-70'>" + data.message + "</h3>")
             })
     }
 })
