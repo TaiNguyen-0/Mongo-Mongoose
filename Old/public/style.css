@@ -1,0 +1,57 @@
+body {
+    background-image: url("1779pac.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+
+#wrapper {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+    background-color: rgba(0, 0, 0, 0.466);
+}
+
+#articles {
+    display: inline-block;
+    overflow: auto;
+    width: 60%;
+    height: 700px;
+}
+
+#notes {
+    float: right;
+    width: 30%;
+    border: 1cm;
+    border-color: red;
+    background-color: rgb(207, 207, 243);
+    padding: 2%;
+    border-block-color: red;
+}
+
+textarea,
+input {
+    display: block;
+    width: 100%;
+    background-color: rgb(204, 247, 196);
+}
+
+input {
+    height: 36px;
+    font-size: 24px;
+}
+
+textarea {
+    height: 200px;
+    font-size: 18px;
+}
+
+p,
+h1,
+i {
+    background-color: rgb(158, 112, 112);
+    border-radius: red;
+    border-color: black;
+    color: rgb(255, 253, 118);
+    padding: 2%;
+}
