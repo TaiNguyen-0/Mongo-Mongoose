@@ -28,8 +28,17 @@ app.use(bodyParser.urlencoded({
 app.use(router);
 
 // Deployed
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
-mongoose.connect(MONGODB_URI);
+// var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+// mongoose.connect(MONGODB_URI);
+var db = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+
+mongoose.connect(db, function (error) {
+    if (error) {
+        console.log(error);
+    } else {
+        console.log("mongoose connection is successful");
+    }
+});
 // // Our scraping tools
 // // Axios is a promised-based http library, similar to jQuery's Ajax method
 // // It works on the client and on the server
