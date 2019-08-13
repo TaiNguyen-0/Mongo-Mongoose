@@ -60,15 +60,6 @@ $(document).ready(function() {
         articleContainer.append(emptyAlert);
     }
 
-    // function handleArticleSave() {
-    //     var articlePanels = [];
-
-    //     for (var i = 0; i < articles.length; i++) {
-    //         articlePanels.push(createPanel(articles[i]));
-    //     }
-    //     articleContainer.append(articlePanels);
-    // }
-
     function createPanel(article) {
         var panel =
             $(["<div class='panel panel-default'>",
@@ -84,10 +75,6 @@ $(document).ready(function() {
 
         return panel;
     }
-
-    // function renderEmpty() {
-
-    // }
 
     function handleArticleSave() {
         var articleToSave = $(this).parents(".panel").data();
